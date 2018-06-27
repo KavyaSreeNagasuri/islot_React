@@ -1,0 +1,21 @@
+body{
+    background-image: url("/images/pic1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;    
+  }
+  .main{
+      padding-top:40px;
+  }
+  h1{
+      font-size: 60px;
+      font-style:oblique;
+      text-align: center;
+      color:white;
+  }
+  h2{
+      font-size: 40px;
+      font-style: italic;
+      color:white;
+      text-align: center;
+  }
+  

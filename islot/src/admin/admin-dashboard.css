@@ -1,0 +1,38 @@
+.main-container{
+    width:900px;
+    height:520px;
+    margin-top:50px;
+    margin-left:200px;
+    border:3px solid black;
+}
+.recent{
+    /* margin-top:; */
+    float: left;
+    margin-left:10px;
+    width:600px;
+    height: 250px;
+    /* border:1px solid black; */
+}
+.upcoming{
+    float: left;
+    margin-left:10px;
+    width:600px;
+    height: 250px;
+}
+
+button{
+    float:left;
+    margin-top:20px;
+    margin-left:50px;
+    border:0px;
+    font-size: 60px;  
+}
+
+#plus{
+    margin-left:470px;
+    /* margin-right:100px; */
+}
+
+.title{
+    font-size: 19px;
+}

@@ -1,0 +1,173 @@
+.react-tabs__tab-list {
+    border-bottom: 2px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  .react-tabs__tab {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-bottom: none;
+    bottom: -2px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .react-tabs__tab--selected {
+    background: #fff;
+    border-color: skyblue;
+    color: black;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .react-tabs__tab--disabled {
+    color: GrayText;
+    cursor: default;
+  }
+  
+  .react-tabs__tab:focus {
+    box-shadow: 0 0 5px hsl(208, 99%, 50%);
+    border-color: hsl(208, 99%, 50%);
+    outline: none;
+  }
+  
+  .react-tabs__tab:focus:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: -4px;
+    right: -4px;
+    bottom: -5px;
+    background: #fff;
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+  }
+  
+.view{
+    border:2px solid black;
+    width:1250px;
+    height:780px;
+    margin-top:40px;
+    margin-left:60px;
+    margin-right:20px;
+    margin-bottom: 20px
+}
+
+.row{
+    /* padding-top: 10px; */
+    margin-top:27px;
+    margin-left:58px;
+    width:1140px;
+    height:157px;
+    border:2px solid black;
+    
+}
+
+/* .update{
+    border:2px solid black;
+    width:1250px;
+    height:785px;
+    margin-top:40px;
+    margin-left:60px;
+    margin-right:20px;
+    margin-bottom: 20px
+} */
+
+.profile{
+    float:left;
+    border:2px solid black;
+    margin-top:19px;
+    margin-left: 300px;
+    width:250px;
+    height:120px;   
+}
+
+.personCount input{
+    width:30px;
+    margin-left:180px;
+    margin-top:50px;
+}
+
+.personCount{
+    float:left;
+    /* border:2px solid black; */
+    width:400px;
+    height:20px;
+    margin-top:23px;
+    margin-left: 40px;
+    height:120px;
+}
+.timings{
+    /* border:2px solid black; */
+    float:left;
+    margin-left:45px;
+    margin-top:55px;
+    
+}
+
+.update{
+    border:2px solid black;
+    width:1250px;
+    height:550px;
+    margin-top:40px;
+    margin-left:60px;
+    margin-right:20px;
+    margin-bottom: 20px
+}
+
+.closeEvent{
+  width:860px;
+  height:500px;
+  margin-top:25px;
+  margin-left: 200px;
+  border:2px solid black;
+}
+
+.nameList{
+  float:left;
+  width:480px;
+  height:400px;
+  margin-top:47px;
+  margin-left: 200px;
+  /* border:2px solid black; */
+}
+
+.list{
+  float:left;
+  width:480px;
+  height:50px;
+  margin-top:47px;
+}
+
+.nameList span{
+  float:left;
+}
+.count{
+  float:left; 
+}
+.count input{
+  width:30px;
+  height:20px;
+  /* border:2px solid black; */
+  margin-top:12px;
+  margin-left:160px;
+}
+
+.approve{
+  float:left;
+  margin-left:140px;
+  margin-top:15px;
+}
+
+.close{
+    float: left;
+    margin-top:420px;
+}

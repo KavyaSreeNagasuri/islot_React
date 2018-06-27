@@ -1,0 +1,25 @@
+.grid-container{
+    align-items: center;
+    /* align-content: center; */
+     justify-content: center; 
+    padding-top: 20px;
+    width:30%;
+    height:80%;
+    /* margin:auto; */
+     margin-top: 80px; 
+     margin-left:495px; 
+    /* border:1px solid black; */
+}
+.button1{
+    padding-left: 136px;
+}
+.button2{
+    padding-left: -8px;
+    display: inline;
+    margin-right: 20px;
+    
+}
+/* .button3{ */
+    /* padding-left: 136px; */
+    
+/* } */
