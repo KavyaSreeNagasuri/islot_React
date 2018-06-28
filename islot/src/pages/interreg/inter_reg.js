@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './inter_reg.css';
-import Nav from '../navbar/navbar';
+// import NavAdmin from '../navbaradmin/navbaradmin';
+import NavInter from '../navbarinter/navbarinter';
 class InterViewer extends Component {
     constructor(){
         super();
@@ -194,7 +195,7 @@ class InterViewer extends Component {
     render() {
         return (
             <div className="container1">
-                <span><Nav /></span>
+                <span><NavInter /></span>
                 <div className="heading">
                         <h3><i>Interviewer Registration</i></h3>
                     </div>
@@ -224,8 +225,8 @@ class InterViewer extends Component {
                         <input type="text" value={this.state.fields["mobile"]} ref={el => this.inputTitle5 = el} onChange={this.change} name="mobile" className="form-control"/>
                         <span className="size" style={{color: "red"}}>{this.state.errors["mobileError"]}</span>                                        
                     </div>
-                    <div className="col-sm-12" id="s1">
-                        <label className="l1">Skills</label>                    
+                    <div className="row" id="s1">
+                        <label className="col-sm-3">Skills</label>                    
                             <select name="skills" onChange={this.change} ref={el => this.inputTitle6 = el} multiple>
                                 <option value="angular">Angular</option>
                                 <option value="css">CSS</option>
@@ -235,9 +236,9 @@ class InterViewer extends Component {
                             </select>
                     </div>
                 </div>
-                <div className="buttons">
-                    <button className="btn bg-primary bt1 " onClick={this.clear_fun}>Clear</button>
-                    <button className="btn bg-primary bt2 " onClick={this.onSubmit.bind(this)}>Register</button>
+                <div className="col-sm-12">
+                    <button className="btn bg-primary col-sm-offset-5 " onClick={this.clear_fun}>Clear</button>
+                    <button className="btn bg-primary col-sm-offset-1 " onClick={this.onSubmit.bind(this)}>Register</button>
                 </div>
             </div>
         );

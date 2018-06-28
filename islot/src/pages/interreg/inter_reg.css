@@ -50,7 +50,7 @@ label{
 }
 .buttons{
     /* margin-left: 0px auto; */
-    text-align: center;
+    align-content:  center;
 }
 .heading{
     position: relative;

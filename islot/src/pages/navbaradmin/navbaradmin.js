@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './navbar.css';
+import './navbaradmin.css';
 import {Link} from 'react-router-dom';
 
-class Nav extends Component {
+class NavAdmin extends Component {
     constructor(props){
         super(props);
     
@@ -63,4 +63,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav;
+export default NavAdmin;

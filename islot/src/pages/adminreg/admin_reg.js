@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './admin_reg.css';
-import Nav from '../navbar/navbar';
+import NavAdmin from '../navbaradmin/navbaradmin';
 
 class Admin extends Component {
     constructor(){
@@ -191,7 +191,7 @@ class Admin extends Component {
     render() {
         return (
         <div className="container1">
-            <span><Nav /></span>
+            <span><NavAdmin /></span>
             <div className="heading">
                 <h3><i>Admin Registration</i></h3>
             </div>
@@ -221,8 +221,8 @@ class Admin extends Component {
                     <input type="text" ref={el => this.inputTitle4 = el} value={this.state.fields["mobile"]} onChange={this.change} name="mobile" className="form-control"/>
                     <span className="size" style={{color: "red"}}>{this.state.errors["mobileError"]}</span>                                        
                 </div>
-                <div className="col-sm-12" id="s1">
-                    <label className="l1" ref={el => this.inputTitle5 = el}>Locations</label>
+                <div className="row" id="s1">
+                    <label className="col-sm-3" ref={el => this.inputTitle5 = el}>Locations</label>
                         <select name="locations" onChange={this.change} multiple>
                             <option value="Hyderabad">Hyderabad</option>
                             <option value="Chennai">Chennai</option>
@@ -231,9 +231,9 @@ class Admin extends Component {
                     </select>
                 </div>
             </div>            
-            <div className="col-xs-12 buttons">
-                <button className="btn bg-primary bt1" onClick={this.clear_fun}>Clear</button>
-                <button className="btn bg-primary bt2" onClick={this.onSubmit.bind(this)}>Register</button>
+            <div className="col-sm-12">
+                <button className="btn bg-primary col-sm-offset-5 " onClick={this.clear_fun}>Clear</button>
+                <button className="btn bg-primary col-sm-offset-1 " onClick={this.onSubmit.bind(this)}>Register</button>
             </div>
         </div>
         );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Switch from 'react-toggle-switch';
+import {Switch} from 'react-toggle-switch';
 import "./eventEnrollment.css";
-export default class EventEnrollment extends Component {
+class EventEnrollment extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -74,3 +74,4 @@ export default class EventEnrollment extends Component {
         );
     }
 }
+export default EventEnrollment;

@@ -9,9 +9,11 @@ import Skills from './pages/skills/skills';
 import Password from './pages/pwd/pwd';
 import Locations from './pages/location/location';
 import AdminDashBoard from './admin/admin-dashboard'; 
-import InterviewerDashBoard from './interviewer/interviewer-dashboard'; 
+import InterviewerDashBoard from './interviewer/interviewer-dashboard';
+import EventEnrollment from './interviewer/eventEnrollment';
 
-class App extends Component {
+
+class App extends Component { 
   render() {
     return (
       <Router>
@@ -25,9 +27,9 @@ class App extends Component {
                 <Route path="/skills" exact component={Skills}/> 
                 <Route path="/pwd" exact component={Password}/>    
                 <Route path="/admindashboard" exact component={AdminDashBoard}/>                                                                                   
-                <Route path="/interviewerdashboard" exact component={InterviewerDashBoard}/>    
+                <Route path="/interdash" exact component={InterviewerDashBoard}/>    
                 <Route path="/loc" exact component={Locations}/>
-                                                                                               
+                <Route path="/event" exact component={EventEnrollment}/>                                                                                               
             </Switch>
         </div>
       </Router>

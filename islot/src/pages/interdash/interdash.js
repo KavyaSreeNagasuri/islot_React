@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './Interviewer_Dashboard.css';
+import './interdash.css';
 import {Link} from 'react-router-dom';
+import EventTile from './event';
 // import fire from '../Fire';
-import Interviewer_Event from "../Interviewer_Event/Interviewer_Event";
-class Interviewer_Dashboard extends Component {
+// import Interviewer_Event from "../Interviewer_Event/Interviewer_Event";
+class InterviewerDashboard extends Component {
     constructor() {
         super();
         this.state = {
@@ -72,7 +73,7 @@ class Interviewer_Dashboard extends Component {
         var upevent = {};
         var i1 = 0, i2 = 0;
         var event = {};
-        fetch("https://pythonreact-f0b4d.firebaseio.com/event.json").then(res => res.json())
+        fetch("https://python-4bb6b.firebaseio.com/event.json").then(res => res.json())
             .then(function (data) {
                 ///  console.log(data);
                 var keys = Object.keys(data);
@@ -114,7 +115,7 @@ class Interviewer_Dashboard extends Component {
                 console.log(Object.keys(recevent).length);
                 console.log(Object.keys(upevent).length);
                 //console.log(recevent.size);
-                for (var x = 0; x < Object.keys(recevent).length; x++) {
+                for (var x = 0; x < Object.keys(recevent).length-5; x++) {
                     const recEventObj = {
                         id: x,
                     startTime: recevent[x].startTime,
@@ -225,33 +226,23 @@ class Interviewer_Dashboard extends Component {
                 <div  class="row">
                     <div id="ID_box_container"class="col-lg-9 line">
                         <h3 id="ID_rec">Recent Events </h3>
-                        <div class="row">
+                        <div class="row1">
                             {this.state.recentEventArray.map(function (data) {
                               
-                              return (  <div id="ID_card" class="col-lg-3">
-                                    <h3 id="ID_card_heading">{data.eventName}</h3>
-                                    <h4 id="ID_card_date">{data.eventDate}</h4>
-                                    <h4 id="ID_card_start_time">Start Time: <span id="ID_st">{data.startTime}</span></h4>
-                                    <h4 id="ID_card_stop_time">End Time: <span id="ID_et">{data.endTime}</span></h4>
-                                    <button id="ID_view_data" type="button" class="btn btn-lg btn-success"    >
-                                    <Link to={`/EventDetail:${data.id}`}>Click</Link></button>
-                                </div>)
+                              return (  
+                                <EventTile eInfo={data} />
+                              )
                             }) }
 
                         </div>
                          <div  class="row">
                         <div id="ID_box_container"class="col-lg-9 line">
-                        <h3 id="ID_rec">Upcoming Events </h3>
-                        <div class="row">
+                        <h3 id="ID_rec1">Upcoming Events </h3>
+                        <div class="rows">
                             {this.state.upcomingEventArray.map(function (data) {
-                              
-                              return (  <div id="ID_card" class="col-lg-3">
-                                    <h3 id="ID_card_heading">{data.eventName}</h3>
-                                    <h4 id="ID_card_date">{data.eventDate}</h4>
-                                    <h4 id="ID_card_start_time">Start Time: <span id="ID_st">{data.startTime}</span></h4>
-                                    <h4 id="ID_card_stop_time">End Time: <span id="ID_et">{data.endTime}</span></h4>
-                                    <button id="ID_view_data"  type="button" class="btn btn-lg btn-success"><Link to="/eventDetail">click</Link></button>
-                                </div>)
+                              return(
+                                    <EventTile eInfo={data} />
+                              )
                             }) }
 
                         </div>
@@ -272,10 +263,17 @@ class Interviewer_Dashboard extends Component {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
             </div>
         );
     }
 }
 
-export default Interviewer_Dashboard;
+export default InterviewerDashboard;

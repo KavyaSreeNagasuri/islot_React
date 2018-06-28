@@ -12,6 +12,8 @@ class Routing extends Component {
                     <li><Link to="/login">Login</Link></li>                    
                     <li><Link to="/interviewer">Sign In as Interviewer</Link></li>
                     <li><Link to="/admin">Sign In as Admin</Link></li>
+                    <li><Link to="/interdash">Interviewer Dashboard</Link></li>    
+                    <li><Link to="/event">Enrollment</Link></li>                                                        
                 </ul>                        
             </div>
         );

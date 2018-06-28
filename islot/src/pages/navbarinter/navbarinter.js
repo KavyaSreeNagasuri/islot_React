@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './navbar.css';
+import './navbarinter.css';
 import {Link} from 'react-router-dom';
 
-class Nav extends Component {
+class NavInter extends Component {
     constructor(props){
         super(props);
     
@@ -48,8 +48,6 @@ class Nav extends Component {
                                 <div className="list1">
                                     <ul className="dropdown-menu" style={{display: 'inline'}}>
                                         <li><Link to="/pwd">Change Password</Link></li>
-                                        <li><Link to="/skills">Skills Management</Link></li>
-                                        <li><Link to="/loc">Location Management</Link></li>
                                         <li><Link to="/update">Update Profile</Link></li>
                                         <li><Link to="/logout">Logout</Link></li>
                                     </ul>
@@ -63,4 +61,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav;
+export default NavInter;

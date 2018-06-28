@@ -1,0 +1,25 @@
+.left{
+    background-color: grey;
+    height: 45px;
+    text-align: center;
+  }
+  .a{
+    margin-left: 30px;
+    margin-top: 15px;
+    /* font-weight: bold; */
+    font-size: 30px;
+  }
+  .place{
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  button{
+      background-color: grey;
+      border: none;
+  }
+  .list1{
+      position: absolute;
+      margin-left: 205px;
+      margin-top: 27px !important;
+  }

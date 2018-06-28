@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './drive_reg.css';
-import Nav from '../navbar/navbar';
+import NavAdmin from '../navbaradmin/navbaradmin';
 import {Link} from 'react-router-dom';
 
 class DriveReg extends Component {
@@ -201,7 +201,7 @@ class DriveReg extends Component {
     render() {
         return (
             <div className="container1">
-                <span><Nav /></span>
+                <span><NavAdmin /></span>
                 <div className="heading">
                     <h3><i>Drive Registration</i></h3>
                 </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Nav from '../navbar/navbar';
+import NavAdmin from '../navbaradmin/navbaradmin';
 
 class Password extends Component {
     constructor(){
@@ -74,7 +74,7 @@ class Password extends Component {
     render() {
         return (
             <div className="container2">
-                <span><Nav /></span>
+                <span><NavAdmin /></span>
                 <div className="heading">
                     <h3><i>Change Password</i></h3>
                 </div>

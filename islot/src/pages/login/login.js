@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './login.css';
 import {Link} from 'react-router-dom';
-import Nav from '../navbar/navbar';
+import NavAdmin from '../navbaradmin/navbaradmin';
 
 class Login extends Component {
     constructor(){
@@ -110,7 +110,7 @@ class Login extends Component {
     render() {
         return (
             <div className="container2">
-                <span><Nav /></span>
+                <span><NavAdmin /></span>
                 <div className="heading">
                     <h3><i>Sign In</i></h3>
                 </div>
